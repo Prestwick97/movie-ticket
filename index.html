@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Tickets</h1>
+      
+          <form id="ticketForm">
+            <div class="form-group">
+            <p>Pick a Movie:</p>
+              <select class="form-control" id="movie">
+                <option value="m1">Silence of The Lambs</option>
+                <option value="m2">Midsommer</option>
+                <option value="m3">The Lighthouse</option>
+                <option value="m4">Shutter Island</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p>Showing Time:</p>
+              <select class="form-control" id="time">
+                <option value="11am">11:00 AM</option>
+                <option value="1pm">1:00 PM</option>
+                <option value="5pm">5:00 PM</option>
+                <option value="8pm">8:00 PM</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p>Age:</p>
+              <select class="form-control" id="age">
+                <option value="child">Child</option>
+                <option value="adult">Adult</option>
+                <option value="senior">Senior</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-primary">Calculate Price</button>
+          </form>
+          <hr>
+          <h2>Price</h2>
+          <ul id="contacts">
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="show-contact">
+            <p>Price: <span class="output"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
